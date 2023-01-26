@@ -1,15 +1,18 @@
-let Counter = 0
-let Make_it_0 = 0
-let Decrease_by_1 = 0
 input.onButtonPressed(Button.A, function () {
     Counter += 1
+    basic.showNumber(Counter)
 })
 input.onButtonPressed(Button.AB, function () {
-    Make_it_0 = 0
+    Counter = 0
+    basic.showNumber(Counter)
 })
 input.onButtonPressed(Button.B, function () {
-    Decrease_by_1 += 1
+    Counter += -1
+    basic.showNumber(Counter)
 })
+let Counter = 0
+Counter = 0
+basic.showNumber(Counter)
 basic.forever(function () {
 	
 })
